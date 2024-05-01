@@ -1,0 +1,92 @@
+body {
+  font-family: "Markazi Text";
+}
+
+.App {
+  text-align: center;
+}
+
+.primary-bcolor-1 {
+  background: #495e57;
+}
+.primary-bcolor-2 {
+  background: #f4ce14;
+}
+.secondary-bcolor-1 {
+  background: #ee9972;
+}
+.secondary-bcolor-2 {
+  background: #fbdabb;
+}
+.secondary-bcolor-3 {
+  background: #edefee;
+}
+
+.secondary-color-3 {
+  color: #edefee;
+}
+
+.primary-color-1 {
+  color: #495e57;
+}
+.primary-color-2 {
+  color: #f4ce14;
+}
+
+.hero-section {
+  padding: 20px 0;
+}
+
+.header-nav {
+  margin-right: 20px;
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+.header-nav ul li {
+  margin-right: 20px;
+}
+
+.header-nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.title {
+  font-size: 64pt;
+  padding: 0;
+  margin: 0;
+}
+.hero-section .subtitle {
+  font-size: 40pt;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-section .description {
+  width: 250px;
+  font-size: 18pt;
+}
+
+.imgInSM {
+  height: 250px;
+}
+
+.imgInXS {
+  bottom: -60px;
+  width: 250px;
+  height: 250px;
+  border-radius: 24px;
+  position: absolute;
+}
+
+.specials-section {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.specials-section-article {
+  width: 250px;
+}
