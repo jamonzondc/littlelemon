@@ -1,13 +1,12 @@
-import "./App.css";
-import Header from "./components/Header";
-import HeroSection from "./components/HeroSection";
 import "@fontsource/markazi-text";
 import "@fontsource/markazi-text/400.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import SpecialsSection from "./components/SpecialsSection";
-import TestimonialsSection from "./components/TestimonialsSection";
-import AboutSection from "./components/AboutSection";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
 import FooterSection from "./components/Footer";
+import Header from "./components/Header";
+import BookingPage from "./pages/BookingPage";
+import HomePage from "./pages/HomePage";
 
 const theme = createTheme({
   palette: {
@@ -22,28 +21,22 @@ const theme = createTheme({
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <nav>
-        <Header />
-      </nav>
-      <main>
-        <section className="primary-bcolor-1" style={{ position: "relative" }}>
-          <HeroSection />
-        </section>
-        <section className="special-section">
-          <SpecialsSection />
-        </section>
-        <section className="testimonials-section">
-          <TestimonialsSection />
-        </section>
-        <section className="about-section">
-          <AboutSection />
-        </section>
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <nav>
+          <Header />
+        </nav>
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/booking" element={<BookingPage />} />
+          </Routes>
+        </main>
         <footer className="footer">
           <FooterSection />
         </footer>
-      </main>
-    </ThemeProvider>
+      </ThemeProvider>
+    </BrowserRouter>
   );
 }
 

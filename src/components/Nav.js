@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const menu = [
   {
@@ -15,7 +16,7 @@ const menu = [
   },
   {
     name: "Reservations",
-    url: "/",
+    url: "/booking",
   },
   {
     name: "Order Online",
@@ -48,6 +49,7 @@ const Nav = ({ isVertical }) => {
   const aStyle = {
     textDecoration: "none",
     fontSize: "28px",
+    color: "#333333",
   };
 
   return (
@@ -55,9 +57,9 @@ const Nav = ({ isVertical }) => {
       <ul style={ulStyle}>
         {menu.map((item, index) => (
           <li style={liStyle}>
-            <a key={index} href={item.url} role="button" style={aStyle}>
+            <Link key={index} to={item.url} style={aStyle}>
               {item.name.toUpperCase()}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
