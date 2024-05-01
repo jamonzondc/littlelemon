@@ -2,8 +2,6 @@ import { Button, Grid, Hidden } from "@mui/material";
 import React from "react";
 import restaurantFoodImage from "../images/restauranfood.jpg";
 
-// Implement the UI for the LandingSection component according to the instructions.
-// Use a combination of Avatar, Heading and VStack components.
 const HeroSection = () => (
   <Grid
     className="hero-section"

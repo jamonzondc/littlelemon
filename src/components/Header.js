@@ -10,7 +10,7 @@ const Header = () => {
         <img src={logoImg} alt="Little Leamon Logo" />
       </Grid>
       <Grid item xs={12} sm="auto">
-        <Nav />
+        <Nav isVertical={false} />
       </Grid>
     </Grid>
   );

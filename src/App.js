@@ -5,6 +5,9 @@ import "@fontsource/markazi-text";
 import "@fontsource/markazi-text/400.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import SpecialsSection from "./components/SpecialsSection";
+import TestimonialsSection from "./components/TestimonialsSection";
+import AboutSection from "./components/AboutSection";
+import FooterSection from "./components/Footer";
 
 const theme = createTheme({
   palette: {
@@ -27,9 +30,18 @@ function App() {
         <section className="primary-bcolor-1" style={{ position: "relative" }}>
           <HeroSection />
         </section>
-        <section>
+        <section className="special-section">
           <SpecialsSection />
         </section>
+        <section className="testimonials-section">
+          <TestimonialsSection />
+        </section>
+        <section className="about-section">
+          <AboutSection />
+        </section>
+        <footer className="footer">
+          <FooterSection />
+        </footer>
       </main>
     </ThemeProvider>
   );

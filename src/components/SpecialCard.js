@@ -8,13 +8,19 @@ import {
 } from "@mui/material";
 import React from "react";
 
-const SpecialCard = ({ title, description, image }) => {
+const SpecialCard = ({ title, description, price, image }) => {
   return (
     <Card sx={{ height: 360 }}>
       <CardMedia sx={{ height: 140 }} image={image} title={title} />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography
+          gutterBottom
+          variant="h5"
+          component="div"
+          sx={{ display: "flex", justifyContent: "space-between" }}
+        >
           {title}
+          <span className="price">{price}</span>
         </Typography>
         <Typography variant="body2" color="text.secondary">
           {description}

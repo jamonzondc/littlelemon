@@ -37,42 +37,20 @@ body {
   padding: 20px 0;
 }
 
-.header-nav {
-  margin-right: 20px;
-}
-
-.header-nav ul {
-  list-style: none;
-  display: flex;
-  padding: 0;
-}
-.header-nav ul li {
-  margin-right: 20px;
-}
-
-.header-nav ul li a {
-  color: black;
-  text-decoration: none;
-}
-
 .title {
   font-size: 64pt;
   padding: 0;
   margin: 0;
 }
-.hero-section .subtitle {
+.subtitle {
   font-size: 40pt;
   padding: 0;
   margin: 0;
 }
 
-.hero-section .description {
+.description {
   width: 250px;
   font-size: 18pt;
-}
-
-.imgInSM {
-  height: 250px;
 }
 
 .imgInXS {
@@ -83,10 +61,58 @@ body {
   position: absolute;
 }
 
-.specials-section {
-  margin-top: 100px;
-  margin-bottom: 50px;
+.special-section,
+.about-section,
+.testimonials-section,
+.footer {
+  padding: 100px 0px;
 }
+
+.testimonials-section {
+  background: #33333340;
+}
+
 .specials-section-article {
+  width: 280px;
+}
+
+.specials-section-article .price {
+  color: red;
+}
+
+.about-section .description {
   width: 250px;
+}
+
+.about-section div {
+  position: relative;
+}
+
+.about-section img {
+  width: 200px;
+  height: 250px;
+
+  border-radius: 24px;
+  position: absolute;
+}
+.marioAndrianImg1 {
+  right: -100px;
+  top: 100px;
+}
+.marioAndrianImg2 {
+  right: -225px;
+}
+
+.footer {
+  padding-bottom: 0px;
+  background: #333333;
+}
+.footer img {
+  width: 150px;
+}
+
+.footer a,
+.footer h2,
+.footer h4 {
+  color: #edefee;
 }

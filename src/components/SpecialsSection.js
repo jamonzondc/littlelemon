@@ -1,4 +1,4 @@
-import { Button, Grid, Typography } from "@mui/material";
+import { Button, Grid } from "@mui/material";
 import React from "react";
 import cardImage2 from "../images/bruchetta.svg";
 import cardImage1 from "../images/greek salad.jpg";
@@ -33,7 +33,7 @@ const SpecialsSection = () => {
   return (
     <>
       <Grid
-        className="specials-section"
+        className="specials"
         container
         justifyContent="space-evenly"
         alignItems="center"
@@ -49,11 +49,11 @@ const SpecialsSection = () => {
       </Grid>
       <Grid container spacing={3} justifyContent="center">
         {projects.map((project) => (
-          <Grid item xs={12} sm="auto">
+          <Grid item xs={12} sm="auto" key={project.title}>
             <article className="specials-section-article">
               <SpecialCard
-                key={project.title}
                 title={project.title}
+                price={project.price}
                 description={project.description}
                 image={project.image}
               />
