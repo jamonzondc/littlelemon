@@ -3,22 +3,13 @@ import StarIcon from "@mui/icons-material/Star";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
 
 const StarRating = ({ value }) => {
-  const stars = [
-    <StarBorderIcon />,
-    <StarBorderIcon />,
-    <StarBorderIcon />,
-    <StarBorderIcon />,
-    <StarBorderIcon />,
-  ];
-
   return (
     <>
-      {stars.map((star, index) => {
+      {[...Array(5)].map((_, index) => {
         if (index < value) return <StarIcon key={index} />;
-        return star;
+        return <StarBorderIcon key={index} />;
       })}
     </>
   );
 };
-
 export default StarRating;

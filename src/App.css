@@ -116,3 +116,11 @@ body {
 .footer h4 {
   color: #edefee;
 }
+.booking-form-section {
+  padding: 20px;
+}
+
+.booking-form-section .card-booking {
+  width: 250px;
+  padding: 18px;
+}

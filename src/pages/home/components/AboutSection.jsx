@@ -1,7 +1,7 @@
 import { Grid } from "@mui/material";
 import React from "react";
-import marioAdrian1 from "../images/Mario-and-Adrian1.jpg";
-import marioAdrian2 from "../images/Mario-and-Adrian2.jpg";
+import marioAdrian1 from "../../../images/Mario-and-Adrian1.jpg";
+import marioAdrian2 from "../../../images/Mario-and-Adrian2.jpg";
 
 const AboutSection = () => {
   return (
@@ -12,7 +12,7 @@ const AboutSection = () => {
         justifyContent="center"
         alignItems="center"
       >
-        <Grid item xs={12} sm={12} md="4">
+        <Grid item xs={12} sm={12} md={4}>
           <h1 className="title">Little Lemon</h1>
           <h3 className="subtitle">Chicago</h3>
           <p className="description">

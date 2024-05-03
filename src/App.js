@@ -5,8 +5,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import FooterSection from "./components/Footer";
 import Header from "./components/Header";
-import BookingPage from "./pages/BookingPage";
-import HomePage from "./pages/HomePage";
+import { ReservationProvider } from "./hooks/context.hook";
+import BookingPage from "./pages/booking/BookingPage";
+import HomePage from "./pages/home/HomePage";
+import ReservationsPage from "./pages/reservations/ReservationsPage";
 
 const theme = createTheme({
   palette: {
@@ -21,22 +23,25 @@ const theme = createTheme({
 
 function App() {
   return (
-    <BrowserRouter>
-      <ThemeProvider theme={theme}>
-        <nav>
-          <Header />
-        </nav>
-        <main>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/booking" element={<BookingPage />} />
-          </Routes>
-        </main>
-        <footer className="footer">
-          <FooterSection />
-        </footer>
-      </ThemeProvider>
-    </BrowserRouter>
+    <ReservationProvider>
+      <BrowserRouter>
+        <ThemeProvider theme={theme}>
+          <nav>
+            <Header />
+          </nav>
+          <main>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/booking" element={<BookingPage />} />
+              <Route path="/reservations" element={<ReservationsPage />} />
+            </Routes>
+          </main>
+          <footer className="footer">
+            <FooterSection />
+          </footer>
+        </ThemeProvider>
+      </BrowserRouter>
+    </ReservationProvider>
   );
 }
 

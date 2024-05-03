@@ -16,7 +16,7 @@ const menu = [
   },
   {
     name: "Reservations",
-    url: "/booking",
+    url: "/reservations",
   },
   {
     name: "Order Online",
@@ -56,8 +56,8 @@ const Nav = ({ isVertical }) => {
     <nav className="header-nav">
       <ul style={ulStyle}>
         {menu.map((item, index) => (
-          <li style={liStyle}>
-            <Link key={index} to={item.url} style={aStyle}>
+          <li key={index} style={liStyle}>
+            <Link to={item.url} style={aStyle}>
               {item.name.toUpperCase()}
             </Link>
           </li>

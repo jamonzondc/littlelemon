@@ -6,7 +6,7 @@ const RatingCard = ({ name, rating, review }) => {
   return (
     <Card>
       <CardContent>
-        <Grid direction="column">
+        <Grid container direction="column">
           <Grid item>
             <StarRating value={rating} />
           </Grid>

@@ -33,8 +33,8 @@ const TestimonialsSection = () => {
         </Grid>
       </Grid>
       <Grid container spacing={3} justifyContent="center">
-        {ratings.map((project) => (
-          <Grid item xs={12} sm="auto" key={project.name}>
+        {ratings.map((project, index) => (
+          <Grid item xs={12} sm="auto" key={index}>
             <article className="specials-section-article">
               <RatingCard
                 name={project.name}

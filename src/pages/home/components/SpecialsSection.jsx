@@ -1,8 +1,8 @@
 import { Button, Grid } from "@mui/material";
 import React from "react";
-import cardImage2 from "../images/bruchetta.svg";
-import cardImage1 from "../images/greek salad.jpg";
-import cardImage3 from "../images/lemon dessert.jpg";
+import cardImage2 from "../../../images/bruchetta.svg";
+import cardImage1 from "../../../images/greek salad.jpg";
+import cardImage3 from "../../../images/lemon dessert.jpg";
 import SpecialCard from "./SpecialCard";
 
 const projects = [

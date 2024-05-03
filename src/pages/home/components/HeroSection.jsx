@@ -1,6 +1,9 @@
+
+
 import { Button, Grid, Hidden } from "@mui/material";
 import React from "react";
-import restaurantFoodImage from "../images/restauranfood.jpg";
+import restaurantFoodImage from "../../../images/restauranfood.jpg";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => (
   <Grid
@@ -17,7 +20,13 @@ const HeroSection = () => (
         recipes served with a modern twist.
       </p>
 
-      <Button color="secondary" className="primary-color-2" variant="contained">
+      <Button
+        color="secondary"
+        className="primary-color-2"
+        variant="contained"
+        component={Link}
+        to="/booking"
+      >
         Reserve a Table
       </Button>
     </Grid>
